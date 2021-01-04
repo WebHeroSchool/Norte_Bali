@@ -221,21 +221,21 @@ body {
 
 .image-content__1st {
   padding: 211px 159px;
-  background: no-repeat url(img/1stImg.svg);
+  background: no-repeat url(img/1stImg.png);
   background-size: contain;
   margin-right: 34px;
 }
 
 .image-content__2nd {
   padding: 190px 142px;
-  background: no-repeat url(img/2ndImg.svg);
+  background: no-repeat url(img/2ndImg.png);
   background-size: contain;
   margin-right: 34px;
 }
 
 .image-content__3rd {
   padding: 190px 105px;
-  background: no-repeat url(img/3rdImg.svg);
+  background: no-repeat url(img/3rdImg.png);
   background-size: contain;
 }
 
