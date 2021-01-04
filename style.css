@@ -50,7 +50,7 @@ body {
   height: 3px;
   background: #f8eee4;
   opacity: 0;
-  transition: opacity 1s, width .3s;
+  transition: opacity 1s, width 0.3s;
   z-index: 3;
 }
 
@@ -63,6 +63,10 @@ body {
   width: 100%;
 }
 
+.menu__item:active:active {
+  transform: scale(0.9);
+}
+
 .menu__btn {
   display: none;
 }
@@ -71,13 +75,13 @@ body {
   display: none;
   position: relative;
   width: 25px;
-	height: 17px;
+  height: 17px;
   cursor: pointer;
   margin-top: 16px;
 }
 
 .burger__line {
-	position: absolute;
+  position: absolute;
   display: block;
   width: 100%;
   height: 3px;
@@ -88,11 +92,11 @@ body {
 .menu__burger::before,
 .menu__burger::after {
   content: "";
-	width: 100%;
-	height: 3px;
+  width: 100%;
+  height: 3px;
   background: #fcf5ed;
 	position: absolute;
-  transition: .3s ease;
+  transition: 0.3s ease;
 }
 
 .menu__burger::before {
@@ -172,8 +176,8 @@ body {
   position: relative;
   z-index: 0;
   font: bold 280px/371px "PT Serif", Arial, Helvetica, Sans-serif;
-  color: #F8EEE4;
-  opacity: .4;
+  color: #f8eee4;
+  opacity: 0.4;
 }
 
 .main-content__title {
@@ -197,20 +201,19 @@ body {
   display: inline-block;
   font: 22px/26px "Museo Sans Cyrl", Arial, Helvetica, Sans-serif;
   color: #fff;
-  background: #D4BEA3;
+  background: #d4bea3;
   padding: 17px 91px;
   text-decoration: none;
   border-radius: 48px;
   transition: opacity 1s;
 }
 
-.menu__item:active,
 .main-content__button:active {
   transform: scale(0.9);
 }
 
 .main-content__button:hover {
-  opacity: .7;
+  opacity: 0.7;
 }
 
 .image-content {
