@@ -32,7 +32,7 @@ body {
   position: relative;
   margin-right: 40px;
   font: 500 22px/26px "Museo Sans Cyrl", arial, helvetica, sans-serif;
-  color: #F8EEE4;
+  color: #f8eee4;
   text-decoration: none;
   cursor: pointer;
 }
@@ -41,14 +41,14 @@ body {
   margin-right: 0;
 }
 
-.menu__item:after {
+.menu__item::after {
   position: absolute;
   right: 0;
   display: block;
   content: '';
   width: 0;
   height: 3px;
-  background: #F8EEE4;
+  background: #f8eee4;
   opacity: 0;
   transition: opacity 1s, width .3s;
   z-index: 3;
@@ -58,13 +58,9 @@ body {
   opacity: 0.7;
 }
 
-.menu__item:hover:after {
+.menu__item:hover::after {
   opacity: 1;
   width: 100%;
-}
-
-.menu__item:active, .main-content__button:active {
-  transform: scale(0.9);
 }
 
 .menu__btn {
@@ -74,7 +70,7 @@ body {
 .menu__burger {
   display: none;
   position: relative;
-	width: 25px;
+  width: 25px;
 	height: 17px;
   cursor: pointer;
   margin-top: 16px;
@@ -82,29 +78,29 @@ body {
 
 .burger__line {
 	position: absolute;
-	display: block;
-	width: 100%;
-	height: 3px;
-	background: #FCF5ED;
-	top: 7px;
+  display: block;
+  width: 100%;
+  height: 3px;
+  background: #fcf5ed;
+  top: 7px;
 }
 
 .menu__burger::before,
 .menu__burger::after {
-	content: "";
+  content: "";
 	width: 100%;
 	height: 3px;
-	background: #FCF5ED;
+  background: #fcf5ed;
 	position: absolute;
-	transition: .3s ease;
+  transition: .3s ease;
 }
 
 .menu__burger::before {
-	top: 0;
+  top: 0;
 }
 
 .menu__burger::after {
-	bottom: 0;
+  bottom: 0;
 }
 
 #checkbox_id {
@@ -183,7 +179,7 @@ body {
 .main-content__title {
   position: relative;
   z-index: 1;
-  margin: 0 0 20px 0px;
+  margin: 0 0 20px 0;
   padding-left: 82px;
   font: bold 98px/130px "PT Serif", Arial, Helvetica, Sans-serif;
   color: #F8EEE4;
@@ -208,9 +204,14 @@ body {
   transition: opacity 1s;
 }
 
+.menu__item:active,
+.main-content__button:active {
+  transform: scale(0.9);
+}
+
 .main-content__button:hover {
-    opacity: .7;
-  }
+  opacity: .7;
+}
 
 .image-content {
   display: flex;
@@ -243,9 +244,11 @@ body {
   body {
     background-size: 1366px auto;
   }
+
   .wrapper {
     margin: 0 0 0 142px;
   }
+
   .header {
     padding-top: 63px;
     display: flex;
@@ -253,43 +256,53 @@ body {
     margin-bottom: 95px;
     margin-right: 81px;
   }
+
   .logo {
     padding: 20px 52px;
   }
+
   .menu__item {
     font: 16px/19px "Museo Sans Cyrl", arial, helvetica, sans-serif;
     margin-right: 29px;
   }
+
   .main-content__title {
     font: 700 70px/91px "PT Serif", Arial, Helvetica, Sans-serif;
     padding-left: 59px;
     margin-bottom: 14px;
   }
+
   .main-content__subtitle {
     font: 700 200px/259px "PT Serif", Arial, Helvetica, Sans-serif;
     margin-bottom: -97px;
   }
+
   .main-content__description {
     margin-bottom: 25px;
     margin-left: 16px;
     font: 16px/19px "Museo Sans Cyrl", Arial, Helvetica, Sans-serif;
   }
+
   .main-content__button {
     padding: 12px 64px;
     font: 500 16px/19px "Museo Sans Cyrl", Arial, Helvetica, Sans-serif;
     margin-left: 16px;
   }
+
   .image-content {
     margin-top: 65px;
   }
+
   .image-content__1st {
     padding: 150px 113px;
     margin-right: 24px;
   }
+
   .image-content__2nd {
     padding: 135px 101px;
     margin-right: 24px;
   }
+
   .image-content__3rd {
     padding: 135px 75px;
   }
@@ -299,16 +312,20 @@ body {
   .wrapper {
     margin: 0 0 0 40px;
   }
+
   .header {
     margin-bottom: 97px;
     margin-right: 35px;
   }
+
   .menu {
     padding-top: 2px;
   }
+
   .main-content {
     margin-right: 8%;
   }
+
   .main-content__description {
     margin-right: -1%;
   }
@@ -318,53 +335,68 @@ body {
   .wrapper {
     margin: 0;
   }
+
   .menu {
     display: none;
   }
+
   .header {
     margin: auto 34px 60px 41px;
     padding-top: 41px;
   }
+
   .logo {
     background-size: contain;
   }
+
   .menu__btn {
     display: block;
   }
+
   .menu__burger {
     display: block;
   }
+
   .main-content {
     margin-left: 4%;
     width: auto;
   }
+
   .main-content__title {
     font: 700 60px/78px "PT Serif", Arial, Helvetica, Sans-serif;
     padding-left: 60px;
     margin-bottom: 37px;
-    }
+  }
+
   .main-content__subtitle {
     font: bold 170px/220px "PT Serif", Arial, Helvetica, Sans-serif;
     margin-bottom: -73px;
   }
+
   .main-content__description {
     text-align: center;
     margin: auto 27px 35px;
     font: 500 18px/22px "Museo Sans Cyrl", Arial, Helvetica, Sans-serif;
   }
+
   .main-content__button {
     margin-left: 18%;
   }
+
   .image-content {
     display: none;
   }
+
   .menu__item:hover {
     opacity: 1;
   }
-  .menu__item:hover:after, .menu__item_active:after {
+
+  .menu__item:hover::after,
+  .menu__item_active::after {
     opacity: 0;
     width: 0;
   }
+
   .main-content__button:hover {
     opacity: 1;
   }
