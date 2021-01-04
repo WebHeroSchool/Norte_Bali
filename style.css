@@ -95,7 +95,7 @@ body {
   width: 100%;
   height: 3px;
   background: #fcf5ed;
-	position: absolute;
+  position: absolute;
   transition: 0.3s ease;
 }
 
@@ -186,7 +186,7 @@ body {
   margin: 0 0 20px 0;
   padding-left: 82px;
   font: bold 98px/130px "PT Serif", Arial, Helvetica, Sans-serif;
-  color: #F8EEE4;
+  color: #f8eee4;
   opacity: 1;
 }
 
