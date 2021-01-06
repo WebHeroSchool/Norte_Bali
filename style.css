@@ -165,10 +165,10 @@ body {
 .main-section {
   display: flex;
   width: 100%;
+  justify-content: space-between;
 }
 
 .main-content {
-  margin-right: 16%;
   max-width: 567px;
 }
 
@@ -223,27 +223,32 @@ body {
   justify-content: flex-end;
   align-items: center;
   margin-top: 5%;
-  overflow: hidden;
+  width: 880px;
+  position: relative;
+  height: 466px;
 }
 
 .image-content__1st {
-  padding: 211px 159px;
+  width: 40%;
+  height: 90%;
   background: no-repeat url(img/1stImg.png);
-  background-size: cover;
-  margin-right: 34px;
+  background-size: contain;
+  margin-right: 4%;
 }
 
 .image-content__2nd {
-  padding: 190px 142px;
+  width: 36%;
+  height: 82%;
   background: no-repeat url(img/2ndImg.png);
-  background-size: cover;
-  margin-right: 34px;
+  background-size: contain;
+  margin-right: 4%;
 }
 
 .image-content__3rd {
-  padding: 190px 105px;
+  width: 26%;
+  height: 82%;
   background: no-repeat url(img/3rdImg.png);
-  background-size: cover;
+  background-size: contain;
 }
 
 @media (max-width: 1366px) {
@@ -255,7 +260,7 @@ body {
     padding-top: 63px;
     display: flex;
     justify-content: space-between;
-    margin-bottom: 95px;
+    margin-bottom: 98px;
     margin-right: 81px;
   }
 
@@ -269,19 +274,18 @@ body {
   }
 
   .main-content {
-    margin-right: 15%;
     max-width: 416px;
   }
 
   .main-content__title {
     font: 700 70px/91px "PT Serif", Arial, Helvetica, Sans-serif;
     padding-left: 59px;
-    margin-bottom: 14px;
+    margin-bottom: 15px;
   }
 
   .main-content__subtitle {
     font: 700 200px/259px "PT Serif", Arial, Helvetica, Sans-serif;
-    margin-bottom: -97px;
+    margin-bottom: -100px;
   }
 
   .main-content__description {
@@ -297,21 +301,9 @@ body {
   }
 
   .image-content {
-    margin-top: 65px;
-  }
-
-  .image-content__1st {
-    padding: 150px 113px;
-    margin-right: 24px;
-  }
-
-  .image-content__2nd {
-    padding: 135px 101px;
-    margin-right: 24px;
-  }
-
-  .image-content__3rd {
-    padding: 135px 75px;
+    height: 390px;
+    width: 625px;
+    margin-top: 56px;
   }
 }
 
@@ -330,7 +322,6 @@ body {
   }
 
   .main-content {
-    margin-right: 7%;
     max-width: 402px;
   }
 
@@ -338,8 +329,27 @@ body {
     margin-right: -1%;
   }
 
+  .image-content {
+    height: 300px;
+    width: 512px;
+    margin-top: 8%;
+  }
+
+  .image-content__1st {
+    width: 45%;
+    height: 100%;
+  }
+
+  .image-content__2nd {
+    width: 41%;
+    height: 90%;
+  }
+
   .image-content__3rd {
-    padding: 135px 19px;
+    width: 8%;
+    height: 90%;
+    background: no-repeat url(img/3rdImg1024.png);
+    background-size: contain;
   }
 }
 
