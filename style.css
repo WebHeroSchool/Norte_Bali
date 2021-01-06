@@ -343,9 +343,10 @@ body {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   body {
     background: no-repeat url(img/mobilBodyImg.png);
+    background-size: cover;
   }
 
   .wrapper {
@@ -387,7 +388,7 @@ body {
 
   .main-content__subtitle {
     font: bold 170px/220px "PT Serif", Arial, Helvetica, Sans-serif;
-    margin-bottom: -73px;
+    margin-bottom: -72px;
   }
 
   .main-content__description {
